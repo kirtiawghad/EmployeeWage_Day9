@@ -10,8 +10,7 @@ public class EmployeeWage {
         //variables
         int emphrs = 0;
         int empwage = 0;
-        int total_wage = 0;
-        for (int i = 0; i <= tital_working_days; i++) {
+
             //use math random method
             int empcheck = (int) (Math.random() * 10 % 3);
             //check emplyee prsent or not
@@ -29,11 +28,8 @@ public class EmployeeWage {
 
             empwage = emphrs * emp_rate_per_hrs;
             System.out.println("emp wage is : " + empwage);
-            total_wage = total_wage + empwage;
 
-        }
 
-        System.out.println(" total wage is :"+total_wage);
 
     }
 }
