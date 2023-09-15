@@ -5,17 +5,14 @@ public class EmployeeWage {
     public static final int IS_FULL_TIME = 2;
     public static final int IS_PART_TIME = 1;
     public static final int EMP_RATE_PER_HOUR = 20;
-    public static final int EMP_WORKING_DAY = 20;
-    public static final int EMP_WORKING_HRS= 100;
 
-
-    public static void empWageMethod(){
+    public static void empWageMethod(int emp_working_day, int emp_working_hrs){
 
         int empHrs = 0;
         int totalEmpHrs = 0;
         int totalEmpDays = 0;
 
-        while (totalEmpHrs <= EMP_WORKING_HRS && totalEmpDays < EMP_WORKING_DAY){
+        while (totalEmpHrs <= emp_working_day && totalEmpDays < emp_working_hrs){
 
             totalEmpDays++;
 
@@ -50,7 +47,8 @@ public class EmployeeWage {
 
     public static void main(String[] args) {
 
-        EmployeeWage.empWageMethod();
+     empWageMethod(20,7);
+     empWageMethod(30,5);
 
     }
 
